@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <title>Search page</title>
+
+    <link href="appearance.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="logo">
+                [ yellow tail! ]
+            </div>
+
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="javascript:void(0)">wines</a></li>
+                    <li><a href="javascript:void(0)">where to buy</a></li>
+                    <li><a href="javascript:void(0)">cocktails</a></li>
+                    <li><a href="javascript:void(0)">our story</a></li>
+                    <li><a href="javascript:void(0)">FAQS</a></li>
+                    <li><a href="javascript:void(0)">contact</a></li>
+                    <li>
+                        <form action="select1.php" method="post">
+                            <p><select name="hero[]">
+                                <option disabled>Выберите героя</option>
+                                <option value="Чебурашка">Чебурашка</option>
+                                <option selected value="Крокодил Гена">Крокодил Гена</option>
+                                <option value="Шапокляк">Шапокляк</option>
+                                <option value="Крыса Лариса">Крыса Лариса</option>
+                            </select></p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section id="content">
+    <div class="heading-subsection">
+        <div class="container">
+            <div class="row">
+                <h1>Where to buy</h1>
+                <div class="subtitle">
+                    [yellow tail!] is available to enjoy worldwide. </br> Enter your location below and we'll find your closest stockist.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-subsection">
+        <div class="container">
+            <div class="row">
+                <form action="/" method="get" enctype="multipart/form-data">
+                    <label for="search_field">Your location</label>
+                    <input type="text" id="search_field" placeholder="Eg. Sydney, NSW 2000">
+                    <button class="search-button" disabled="disabled">Search</button>
+                </form>
+            </div>
+            <div>
+                <p class="subsection-description">Enter your location above to start your search...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <h6 class="header-title">[ yellow tail! ]&reg;</h6>
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="javascript:void(0)">Wines</a></li>
+                    <li><a href="javascript:void(0)">Where to Buy</a></li>
+                    <li><a href="javascript:void(0)">Cocktails</a></li>
+                    <li><a href="javascript:void(0)">Our Story</a></li>
+                    <li><a href="javascript:void(0)">FAQs</a></li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
