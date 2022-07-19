@@ -70,14 +70,15 @@ header, footer {
     padding-bottom: 52px;
 }
 
-.search-button {background: url(images/arrow.png) center left no-repeat;
-    background-size: 12%;
+.search-button {
+    background: var(--yellow) url(images/arrow.png) left 10px top 50% no-repeat;
+    background-size: 14px;
+    margin-left: 15px;
     padding-left: 40px;
     font-weight: bold;
-    margin-left: 15px;
-    background: var(--yellow);
 }
-.search-button:disabled{
+
+.search-button:disabled {
     cursor:pointer;
     color: black;
 }
@@ -90,6 +91,7 @@ h1 {
 }
 
 .subtitle {
+    font-family: Ebrima;
     max-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
@@ -105,6 +107,24 @@ footer .row {
     justify-content: center;
     list-style-type: none;
     gap: 50px;
+}
+
+.header-nav ul li a {
+    display: inline-flex;
+    height: 100%;
+}
+
+.header-nav ul li img {
+    max-width: 14px;
+    align-self: center;
+}
+
+.header-nav ul li:last-child a::after {
+    content: '\25BC';
+    display: inline-block;
+    align-self: center;
+    margin-left: 7px;
+    font-size: 12px;
 }
 
 .footer-nav li {
@@ -139,6 +159,7 @@ label {
     font-weight: bold;
     margin-right: 20px;
     text-transform: uppercase;
+    width: 100%;
 }
 
 input {
@@ -170,7 +191,7 @@ button {
     margin-top: 35px;
     margin-left: 135px;
     max-width: 768px;
-    padding: 0px 95px 80px;
+    padding: 0px 95px 100px;
 
 }
 
